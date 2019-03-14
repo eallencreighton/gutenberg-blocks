@@ -1,0 +1,18 @@
+.wp-block-ecablocks-nested-block {
+   display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .wp-block-ecablocks-frame-device.card {
+         width: calc(33.333% - 20px);
+         padding: 0;
+         position: static;
+         &:after {
+            display: block;
+            content: "";
+            margin-left: calc(33.333% - 20px);
+         }
+         img {
+            width: 100%;
+         }
+      }
+}

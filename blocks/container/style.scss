@@ -1,0 +1,9 @@
+.wp-block-ecablocks-container {
+   background: rgba(210, 209, 205, 0.3);
+   max-width: 1170px;
+   margin: 0 auto;
+}
+
+.wp-block-ecablocks-container[data-align="full"] {
+   max-width: 100%;
+}

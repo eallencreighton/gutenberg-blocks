@@ -1,0 +1,26 @@
+.wp-block-ecablocks-nested-block {
+   .editor-block-list__layout {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .editor-block-list__block:before {
+         width: calc(33.333% - 20px) !important;
+         
+      }
+      .editor-block-list__block {
+         width: calc(33.333% - 20px) !important;
+         padding: 0;
+         position: static;
+         &:after {
+            display: block;
+            content: "";
+            margin-left: calc(33.333% - 20px);
+         }
+         .editor-block-list__block-edit,
+         img {
+            width: 100%;
+         }
+      }
+   
+   }
+}
