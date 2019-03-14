@@ -11,6 +11,7 @@ const { ColorPalette } = wp.components;
 const { InspectorControls } = wp.editor;
 const { MediaUpload } = wp.editor;
 const { InnerBlocks } = wp.editor;
+import icon from './icon';
 
 
 export default registerBlockType("ecablocks/nested-block", {
@@ -20,7 +21,9 @@ export default registerBlockType("ecablocks/nested-block", {
       "ecablocks"
    ),
    category: "common",
-   icon: "layout",
+   icon: {
+      src: icon
+   },
    supports: {
       html: false
     },

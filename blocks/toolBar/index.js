@@ -29,8 +29,7 @@ export default registerBlockType('ecablocks/toolbar',
       description: __('Messign around with the hoverable toolbar', 'ecablocks'),
       category: 'common',
       icon: {
-         src: icon,
-         background: 'green'
+         src: icon
       },
       keywords: [
          __( 'Button', 'ecablocks' ),

@@ -1,5 +1,6 @@
 import './style.scss';
 import './editor.scss';
+import icon from './icon';
 
 
 /**
@@ -28,7 +29,9 @@ export default registerBlockType("ecablocks/cta", {
       "ecablocks"
    ),
    category: "common",
-   icon: "heart",
+   icon: {
+      src: icon
+   },
    supports: {
       html: false
     },

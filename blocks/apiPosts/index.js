@@ -8,6 +8,7 @@
 //  Import CSS.
 import './style.scss';
 import './editor.scss';
+import icon from './icon';
 
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
@@ -31,7 +32,9 @@ const { withSelect } = wp.data;
 registerBlockType('ecablocks/api-block', {
 	title: __('API Block'),
 	description: __('An API block'),
-	icon: 'image-rotate',
+   icon: {
+      src: icon
+   },
 	category: 'common',
 	keywords: [__('api-block'), __('Posts'), __('Police Academy')],
 	edit: withSelect(select => {

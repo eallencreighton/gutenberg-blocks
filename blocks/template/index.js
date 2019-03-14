@@ -1,6 +1,8 @@
 const el = wp.element.createElement;
 const { registerBlockType } = wp.blocks;
 const { InnerBlocks } = wp.editor;
+import icon from './icon';
+
 
 const BLOCKS_TEMPLATE = [
    [ 'core/heading', { placeholder: 'Template Heading, start here!' } ],
@@ -13,6 +15,9 @@ const BLOCKS_TEMPLATE = [
 registerBlockType( 'ecablocks/template', {
     title: 'Template Block',
     category: 'widgets',
+    icon: {
+      src: icon
+   },
     edit: ( props ) => {
       return (
          <InnerBlocks
